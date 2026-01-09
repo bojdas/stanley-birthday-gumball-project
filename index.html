@@ -10,11 +10,26 @@
     <!-- Restart Button (always visible) -->
     <button id="restartBtn" class="restart-btn" title="Reset Machine">🔄</button>
 
+    <!-- Birthday Title Banner -->
+    <div class="birthday-banner">
+        <h1 class="birthday-title">Happy Birthday Stanley!</h1>
+        <div class="banner-decoration"></div>
+    </div>
+
     <!-- Main Machine Container -->
     <div class="machine-container">
+        <!-- Machine Top Decoration -->
+        <div class="machine-top">
+            <div class="machine-crown"></div>
+            <div class="machine-lights">
+                <span class="light light-1"></span>
+                <span class="light light-2"></span>
+                <span class="light light-3"></span>
+            </div>
+        </div>
+
         <!-- Machine Header -->
         <div class="machine-header">
-            <h1>Gumball Egg Machine</h1>
             <div class="remaining-counter">
                 <span id="remainingCount">20</span> remaining
             </div>
@@ -24,7 +39,10 @@
         <div class="machine-body">
             <!-- Coin Slot Area -->
             <div class="coin-slot-area">
-                <div class="coin-slot"></div>
+                <div class="coin-slot-frame">
+                    <div class="coin-slot"></div>
+                    <div class="coin-slot-label">COIN</div>
+                </div>
                 <div id="coin" class="coin"></div>
             </div>
 
@@ -37,11 +55,14 @@
 
             <!-- Chute/Track -->
             <div class="chute-track">
+                <div class="chute-side chute-left"></div>
+                <div class="chute-side chute-right"></div>
                 <div id="egg" class="egg"></div>
             </div>
 
             <!-- Tray Area -->
             <div class="tray-area">
+                <div class="tray-rim"></div>
                 <div id="trayEgg" class="tray-egg"></div>
             </div>
 

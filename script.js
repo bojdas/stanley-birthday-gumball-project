@@ -125,16 +125,21 @@ function init() {
     whiteFlash.addEventListener('animationend', handleWhiteFlashEnd);
 }
 
-// Generate decorative balls in globe
+// Generate decorative balls in globe with random colors
 function generateBalls() {
     ballsContainer.innerHTML = '';
     const totalBalls = 20;
     const remaining = getRemainingPrizes().length;
-    const dispensed = dispensedPrizeIds.length;
+    const colorClasses = ['color-1', 'color-2', 'color-3', 'color-4', 'color-5', 'color-6', 
+                         'color-7', 'color-8', 'color-9', 'color-10', 'color-11', 'color-12'];
 
     for (let i = 0; i < totalBalls; i++) {
         const ball = document.createElement('div');
         ball.className = 'ball';
+        
+        // Assign random color
+        const randomColor = colorClasses[Math.floor(Math.random() * colorClasses.length)];
+        ball.classList.add(randomColor);
         
         // Dim or hide balls based on dispensed count
         if (i >= remaining) {
