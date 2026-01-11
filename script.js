@@ -14,63 +14,87 @@ let currentState = STATES.IDLE_STAGE_1;
 const prizes = [
     {
         id: 1,
-        name: "Memory Lane",
-        image: "https://via.placeholder.com/800x600/ff6b6b/ffffff?text=Memory+Lane",
-        letter: "Dear Stanley,<br><br>This memory always makes me <strong>smile</strong>. Remember that time we...<br><br>Those moments are what make our friendship so special! 💙"
+        name: "Bojro",
+        image: "assets/images/prize-1.jpg",
+        letter: "ni hao fine shyt,<br>Happy birthday Stanley-chan! Here's to 19 years of being a Jewish Canadian! I'll always remember Daniel dropping \"Call On Me,\" you getting hella hyped, and then shipping you off in the uber and tucking yo aah in bed after u PROJECTILE VOMITED. 🤮 <br>I'm seriously so grateful that you were my first Cornell friend, and I feel you've opened my eyes up so much to the world, whether it be Koreans, chromehearts, or your deep yap‼️ <br>Anyways imma visit the big van 🍁 some time so I can add it to my insta bio, and I'm tryna get a closet tour and get food recs. 🍲 meow.<br>Love,<br>B Diddy 😻🧃"
     },
     {
         id: 2,
-        name: "Adventure Time",
-        image: "https://via.placeholder.com/800x600/4ecdc4/ffffff?text=Adventure+Time",
-        letter: "Hey Stanley!<br><br>Thinking about all our <em>adventures</em> together brings back such great memories.<br><br>Here's to many more! 🎉"
+        name: "David",
+        image: "assets/images/prize-2.jpg",
+        letter: "Dear Stanley,<br>Happy birthday! You are my favorite Canadian and that will never change. Nevertheless, I’m still gonna Nut-in-Sci you. Even though I’m usually sleeping and you’re usually… nutting(?), we still somehow find the time to make fruitful encounters.<br>I hope you’ve had fun back in Canada during the break. Though keeping in mind recent geopolitical events, perhaps you will be joining me in becoming an American one day.<br>Until then,<br>David"
     },
     {
         id: 3,
-        name: "Laugh Out Loud",
-        image: "https://via.placeholder.com/800x600/ffe66d/333333?text=Laugh+Out+Loud",
-        letter: "Stanley,<br><br>You have the best sense of humor! This moment had me <strong>laughing</strong> for days.<br><br>Thanks for always bringing joy! 😂"
+        name: "Jaelyn",
+        image: "assets/images/prize-3.jpg",
+        letter: "HAPPY BIRTHDAY STANLEYYY!!<br>Crazy to think if Bojro never introduced us we wouldn’t be friends right now 🙏<br>#ilovecanadavancouver<br>– Jaelyn"
     },
     {
         id: 4,
-        name: "Friendship Forever",
-        image: "https://via.placeholder.com/800x600/95e1d3/333333?text=Friendship+Forever",
-        letter: "To my amazing friend,<br><br>Our friendship means the world to me. Through thick and thin, you've always been there.<br><br>Here's to us! 🎊"
+        name: "Sajan",
+        image: "assets/images/prize-4.jpg",
+        letter: "Happy birthday wuca, Its been amazing getting to know you and FWS with you and zzzzzetong was mad fun. Ur my favorite Canadian and I hope you get to show me around Vancouver some day. Love you wuca have a good one<br>– Sajan"
     },
     {
         id: 5,
-        name: "Celebration",
-        image: "https://via.placeholder.com/800x600/f38181/ffffff?text=Celebration",
-        letter: "Happy Birthday, Stanley!<br><br>Today we celebrate <strong>you</strong> and all the wonderful things that make you special.<br><br>Hope your day is as amazing as you are! 🎂"
+        name: "Rehaan",
+        image: "assets/images/prize-5.jpg",
+        letter: "Happy birthday! Thank you for being a chill roomate this past semester. Even though going random had me worried, I’m lucky I ended up rooming with you. Looking forward to spending the next semester with you. <br>– Rehaan"
     },
     {
         id: 6,
-        name: "Dream Big",
-        image: "https://via.placeholder.com/800x600/aa96da/ffffff?text=Dream+Big",
-        letter: "Stanley,<br><br>You inspire me to <em>dream bigger</em> and reach for the stars. Your ambition is contagious!<br><br>Keep shining! ⭐"
+        name: "Abe",
+        image: "assets/images/prize-6.jpg",
+        letter: "STANLEY!!<br>Hey goattt HAPPY BIRTHDAYY!! it’s been so nice getting to know you this year for cornell and i’m glad we’re friends!! you’re always so funny and bring a vibe to wherever we hangout in dull ahh ithaca😭. i hope you have a great one and we all love u soso much 😁<br>–abe <br>p.s. when we running back matcha?"
     },
     {
         id: 7,
-        name: "Gratitude",
-        image: "https://via.placeholder.com/800x600/fce38a/333333?text=Gratitude",
-        letter: "Dear friend,<br><br>I'm so <strong>grateful</strong> to have you in my life. Your kindness and support mean everything.<br><br>Thank you for being you! 🙏"
+        name: "Masaki",
+        image: "assets/images/prize-7.jpg",
+        letter: "To my favorite chrome hearts, Frank ocean, abg enthusiast:<br>HAPPY BIRTHDAY STANLEY!!<br>I’m so lucky to have met you at Cornell, and I might’ve not made the first semester without you. I smell many abgs and Pokémon card hits in the near future, we’ll make it through the next 7 semesters.😛😛<br>-your twin Masaki"
     },
     {
         id: 8,
-        name: "Milestone",
-        image: "https://via.placeholder.com/800x600/ffaaa5/ffffff?text=Milestone",
-        letter: "Stanley,<br><br>This milestone is just the beginning! You've accomplished so much, and there's so much more ahead.<br><br>Proud of you! 🏆"
+        name: "Johnny",
+        image: "assets/images/prize-8.jpg",
+        letter: "Hi Stan the Man! Happy 19th birthday! Sorry we can’t be there to celebrate in person. But I hope you live it up over in Vancouver, or wherever you’re going. I remember when we first met (kinda). I think we were going to some party, and at first, your blunt words threw me off, i won’t lie. But we talked about random stuff like pokémon, and as i got to know you better, i found out that your bluntness was your way of being sincere. Not wearing a mask, as you say. And I’ve come to really appreciate your different worldviews, your truthfulness, and our conversations on life and different dilemmas. One of my most fond memories of college was that night me you and elaine just yapped, and we went back to your room and talked more, until 4-5. Not to be too sappy, but I truly do value you, and am very thankful that I got to know you, and have you in my life. Anyways, i was told to keep it short, so I hope you celebrate safely, and I wish you the best 19th birthday!<br>-Johnny"
     },
     {
         id: 9,
-        name: "Joy & Happiness",
-        image: "https://via.placeholder.com/800x600/a8e6cf/333333?text=Joy+%26+Happiness",
-        letter: "To bring you joy,<br><br>Your happiness is important to me. I hope this brings a <strong>smile</strong> to your face!<br><br>You deserve all the happiness in the world! 😊"
+        name: "Nico",
+        image: "assets/images/prize-9.jpg",
+        letter: "Dearest Stanley,<br>Happy birthday to the best Canadian anyone can ask for. You put the W in WE FAILED nutrition, chem, and all the classes next sem WE will fail together. Luv you 😘 <br>-Nico"
     },
     {
         id: 10,
-        name: "Special Moment",
-        image: "https://via.placeholder.com/800x600/ffd3a5/333333?text=Special+Moment",
-        letter: "Stanley,<br><br>This moment captured something <em>special</em> between us. It's a memory I'll treasure forever.<br><br>Thank you for being part of my life! 💝"
+        name: "Audrey",
+        image: "assets/images/prize-10.jpg",
+        letter: "Happy birthday Stanley!! I’m so glad I got to know u this year! Thanks for being such an amazing friend and physics tutor 😊 Hope you have a great bday!! - Audrey"
+    },
+    {
+        id: 11,
+        name: "Noah",
+        image: "assets/images/prize-11.jpg",
+        letter: "HAPPY BIRTHDAY STANLEY!!! im so glad i got to know you this sem and im glad we got so close ☺️. we definitely bonded through chem trauma(even if youre always preying on my downfall) and just chatting about anything! youre such a real guy and i really appreciate that authenticity especially in this day and age. i hope you have the best 19th birthday and i know youre gonna have a great year! im looking forward to hanging w you more and getting closer 😉 to you this sem. and ill def come to vancouver this summer if i can afford it!! see you soon sw☺️<br>-Noah"
+    },
+    {
+        id: 12,
+        name: "Elaine",
+        image: "assets/images/prize-12.jpg",
+        letter: "Dear the FLATEST of them all,<br>    Happy birthday flat stanely. You are holy unc now! Ty for letting me bomb your dorm at weird hours and letting me make buldak in your water boiler . I’m so grateful that you trapped me into that inital talk tuah - our conversations are always so interesting, unique, and 67. On a real note, thanks for being one of my go to people here, you are an important part of our group. Dont forget all the things you need to tell me from you Canadian adventures, take tuah soon goat!<br>Best,<br>676869676869elainezhang"
+    },
+    {
+        id: 13,
+        name: "Ryan",
+        image: "assets/images/prize-13.jpg",
+        letter: "dear stanley,<br>happy birthday penis penis penis penis penis penis penis<br>anyways ur my favorite cutie little canadian and ur so hot and fantastic and beautiful <br>anyways it has been super nice getting to know u this semester and i look forward to getting closer w u. hopefully we can goon together more and get food mmmm.<br>happy 19th again YESS UNC<br>-ur favorite, ryan chen"
+    },
+    {
+        id: 14,
+        name: "Kevin",
+        image: "assets/images/prize-14.jpg",
+        letter: "Roses are red, violets are blue, I hate fucking Canadians, but I guess that you’ll do. In this vast vast world, of hundreds of “you”, I’d give you a 7 out of 6 for what you do. Happy happy birthday, second best Canadian of all, I hope that you enjoy my letter this fall.<br><br>-yevin kan write poetry"
     }
 ];
 

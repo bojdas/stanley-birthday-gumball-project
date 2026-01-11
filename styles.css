@@ -749,7 +749,8 @@ body {
 
 .polaroid-image {
     width: 100%;
-    height: auto;
+    max-height: 40vh;      /* cap vertical size */
+    object-fit: contain;  /* keep aspect ratio */
     display: block;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -769,8 +770,8 @@ body {
 }
 
 .polaroid-letter {
-    font-size: 17px;
-    line-height: 2;
+    font-size: 15px;
+    line-height: 1.6;
     color: #333;
     margin-bottom: 35px;
     white-space: pre-wrap;
