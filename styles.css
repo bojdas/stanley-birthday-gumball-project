@@ -773,9 +773,13 @@ body {
     font-size: 15px;
     line-height: 1.6;
     color: #333;
-    margin-bottom: 35px;
-    white-space: pre-wrap;
+    margin-bottom: 20px;
     font-family: 'Georgia', serif;
+
+    /* NEW */
+    max-height: 35vh;
+    overflow-y: auto;
+    padding-right: 10px;
 }
 
 .next-btn {
